@@ -1,0 +1,71 @@
+{
+  "app": {
+    "bundleName": "com.example.myapp.hmservice",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.myapp",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.myapp.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": true
+    },
+    "abilities": [
+      {
+
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.myapp.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.myapp.LoginAbility",
+        "icon": "$media:icon",
+        "description": "$string:loginability_description",
+        "label": "$string:entry_LoginAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+
+        "orientation": "unspecified",
+        "name": "com.example.myapp.RegisterAbility",
+        "icon": "$media:icon",
+        "description": "$string:registerability_description",
+        "label": "$string:entry_RegisterAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

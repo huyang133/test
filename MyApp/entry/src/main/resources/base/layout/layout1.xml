@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:left_margin="50vp">
+
+    <include
+        ohos:id="$+id:header_disc"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        layout="$layout:header_disc"
+        ohos:align_parent_top="true"/>
+    <!--中间菜单栏-->
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="170vp"
+        ohos:orientation="vertical">
+    <DirectionalLayout
+        ohos:below="$id:header_disc"
+        ohos:top_padding="15vp"
+        ohos:bottom_margin="10vp"
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:top_margin="15vp"
+        ohos:background_element="#f6f6f8"
+        ohos:orientation="horizontal">
+        <Image
+            ohos:id="$+id:coffee_img"
+            ohos:height="100vp"
+            ohos:width="100vp"
+            ohos:image_src="$media:f"
+            ohos:scale_mode="stretch"
+            ohos:clip_alignment="center"
+            ohos:layout_alignment="center"/>
+
+        <DirectionalLayout
+            ohos:left_margin="8vp"
+            ohos:top_margin="4vp"
+            ohos:height="100vp"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <Text
+                ohos:id="$+id:coffee_title"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="知春拿铁"
+                ohos:text_color="#313131"
+                ohos:text_size="16fp"
+                ohos:text_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:height="26vp"
+                ohos:width="match_parent"
+                ohos:top_margin="45vp"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:id="$+id:coffee_price"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="￥20"
+                    ohos:text_color="#dd5810"
+                    ohos:text_size="18fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:alignment="right"
+                    ohos:orientation="horizontal">
+
+                    <Image
+                        ohos:id="$+id:minus"
+                        ohos:visibility="hide"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:qian"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+
+                    <Text
+                        ohos:id="$+id:num"
+                        ohos:visibility="hide"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:left_margin="2vp"
+                        ohos:right_margin="2vp"
+                        ohos:text="0"
+                        ohos:text_alignment="vertical_center"
+                        ohos:text_size="20fp"/>
+
+                    <Image
+                        ohos:id="$+id:add"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:jia"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:below="$id:header_disc"
+        ohos:top_padding="15vp"
+        ohos:bottom_margin="30vp"
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:background_element="#f6f6f8"
+        ohos:top_margin="15vp"
+        ohos:orientation="horizontal">
+        <Image
+
+            ohos:height="100vp"
+            ohos:width="100vp"
+            ohos:image_src="$media:coffe"
+            ohos:scale_mode="stretch"
+            ohos:clip_alignment="center"
+            ohos:layout_alignment="center"/>
+
+        <DirectionalLayout
+            ohos:left_margin="8vp"
+            ohos:top_margin="4vp"
+            ohos:height="100vp"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <Text
+
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="冰萃美式"
+                ohos:text_color="#313131"
+                ohos:text_size="16fp"
+                ohos:text_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:height="26vp"
+                ohos:width="match_parent"
+                ohos:top_margin="45vp"
+                ohos:orientation="horizontal">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="￥30"
+                    ohos:text_color="#dd5810"
+                    ohos:text_size="18fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:alignment="right"
+                    ohos:orientation="horizontal">
+
+                    <Image
+
+                        ohos:visibility="hide"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:qian"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+
+                    <Text
+
+                        ohos:visibility="hide"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:left_margin="2vp"
+                        ohos:right_margin="2vp"
+                        ohos:text="0"
+                        ohos:text_alignment="vertical_center"
+                        ohos:text_size="20fp"/>
+
+                    <Image
+
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:jia"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:below="$id:header_disc"
+        ohos:top_padding="15vp"
+        ohos:bottom_margin="30vp"
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:background_element="#f6f6f8"
+        ohos:top_margin="5vp"
+        ohos:orientation="horizontal">
+        <Image
+
+            ohos:height="100vp"
+            ohos:width="100vp"
+            ohos:image_src="$media:d"
+            ohos:scale_mode="stretch"
+            ohos:clip_alignment="center"
+            ohos:layout_alignment="center"/>
+
+        <DirectionalLayout
+            ohos:left_margin="8vp"
+            ohos:top_margin="4vp"
+            ohos:height="100vp"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <Text
+
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="丝绒拿铁"
+                ohos:text_color="#313131"
+                ohos:text_size="16fp"
+                ohos:text_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:height="26vp"
+                ohos:width="match_parent"
+                ohos:top_margin="45vp"
+                ohos:orientation="horizontal">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="￥16"
+                    ohos:text_color="#dd5810"
+                    ohos:text_size="18fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:alignment="right"
+                    ohos:orientation="horizontal">
+
+                    <Image
+
+                        ohos:visibility="hide"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:qian"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+
+                    <Text
+
+                        ohos:visibility="hide"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:left_margin="2vp"
+                        ohos:right_margin="2vp"
+                        ohos:text="0"
+                        ohos:text_alignment="vertical_center"
+                        ohos:text_size="20fp"/>
+
+                    <Image
+
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:jia"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:below="$id:header_disc"
+        ohos:top_padding="15vp"
+        ohos:bottom_margin="60vp"
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:background_element="#f6f6f8"
+
+        ohos:orientation="horizontal">
+        <Image
+
+            ohos:height="100vp"
+            ohos:width="100vp"
+            ohos:image_src="$media:zm"
+            ohos:scale_mode="stretch"
+            ohos:clip_alignment="center"
+            ohos:layout_alignment="center"/>
+
+        <DirectionalLayout
+            ohos:left_margin="8vp"
+            ohos:top_margin="4vp"
+            ohos:height="100vp"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <Text
+
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="西瓜拿铁"
+                ohos:text_color="#313131"
+                ohos:text_size="16fp"
+                ohos:text_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:height="26vp"
+                ohos:width="match_parent"
+                ohos:top_margin="45vp"
+                ohos:orientation="horizontal">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="￥10"
+                    ohos:text_color="#dd5810"
+                    ohos:text_size="18fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:alignment="right"
+                    ohos:orientation="horizontal">
+
+                    <Image
+
+                        ohos:visibility="hide"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:jia"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+
+                    <Text
+
+                        ohos:visibility="hide"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:left_margin="2vp"
+                        ohos:right_margin="2vp"
+                        ohos:text="0"
+                        ohos:text_alignment="vertical_center"
+                        ohos:text_size="20fp"/>
+
+                    <Image
+
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:jia"
+                        ohos:layout_alignment="vertical_center"
+                        ohos:padding="5vp"
+                        ohos:scale_mode="stretch"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="170vp"
+        ohos:orientation="vertical">
+        <DirectionalLayout
+            ohos:below="$id:header_disc"
+            ohos:top_padding="15vp"
+            ohos:bottom_margin="10vp"
+            ohos:height="120vp"
+            ohos:width="match_parent"
+            ohos:top_margin="15vp"
+            ohos:background_element="#f6f6f8"
+            ohos:orientation="horizontal">
+            <Image
+
+                ohos:height="100vp"
+                ohos:width="100vp"
+                ohos:image_src="$media:k"
+                ohos:scale_mode="stretch"
+                ohos:clip_alignment="center"
+                ohos:layout_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:left_margin="8vp"
+                ohos:top_margin="4vp"
+                ohos:height="100vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="生椰拿铁"
+                    ohos:text_color="#313131"
+                    ohos:text_size="16fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="26vp"
+                    ohos:width="match_parent"
+                    ohos:top_margin="45vp"
+                    ohos:orientation="horizontal">
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="￥16"
+                        ohos:text_color="#dd5810"
+                        ohos:text_size="18fp"
+                        ohos:text_alignment="center"/>
+
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="match_parent"
+                        ohos:alignment="right"
+                        ohos:orientation="horizontal">
+
+                        <Image
+
+                            ohos:visibility="hide"
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:qian"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+
+                        <Text
+
+                            ohos:visibility="hide"
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:left_margin="2vp"
+                            ohos:right_margin="2vp"
+                            ohos:text="0"
+                            ohos:text_alignment="vertical_center"
+                            ohos:text_size="20fp"/>
+
+                        <Image
+
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:jia"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+                    </DirectionalLayout>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:below="$id:header_disc"
+            ohos:top_padding="15vp"
+            ohos:bottom_margin="30vp"
+            ohos:height="120vp"
+            ohos:width="match_parent"
+            ohos:background_element="#f6f6f8"
+            ohos:top_margin="15vp"
+            ohos:orientation="horizontal">
+            <Image
+
+                ohos:height="100vp"
+                ohos:width="100vp"
+                ohos:image_src="$media:y"
+                ohos:scale_mode="stretch"
+                ohos:clip_alignment="center"
+                ohos:layout_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:left_margin="8vp"
+                ohos:top_margin="4vp"
+                ohos:height="100vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="厚乳拿铁"
+                    ohos:text_color="#313131"
+                    ohos:text_size="16fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="26vp"
+                    ohos:width="match_parent"
+                    ohos:top_margin="45vp"
+                    ohos:orientation="horizontal">
+
+                    <Text
+
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="￥22"
+                        ohos:text_color="#dd5810"
+                        ohos:text_size="18fp"
+                        ohos:text_alignment="center"/>
+
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="match_parent"
+                        ohos:alignment="right"
+                        ohos:orientation="horizontal">
+
+                        <Image
+
+                            ohos:visibility="hide"
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:qian"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+
+                        <Text
+
+                            ohos:visibility="hide"
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:left_margin="2vp"
+                            ohos:right_margin="2vp"
+                            ohos:text="0"
+                            ohos:text_alignment="vertical_center"
+                            ohos:text_size="20fp"/>
+
+                        <Image
+
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:jia"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+                    </DirectionalLayout>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:below="$id:header_disc"
+            ohos:top_padding="15vp"
+            ohos:bottom_margin="30vp"
+            ohos:height="120vp"
+            ohos:width="match_parent"
+            ohos:background_element="#f6f6f8"
+            ohos:top_margin="5vp"
+            ohos:orientation="horizontal">
+            <Image
+
+                ohos:height="100vp"
+                ohos:width="100vp"
+                ohos:image_src="$media:l"
+                ohos:scale_mode="stretch"
+                ohos:clip_alignment="center"
+                ohos:layout_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:left_margin="8vp"
+                ohos:top_margin="4vp"
+                ohos:height="100vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="燕麦拿铁"
+                    ohos:text_color="#313131"
+                    ohos:text_size="16fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="26vp"
+                    ohos:width="match_parent"
+                    ohos:top_margin="45vp"
+                    ohos:orientation="horizontal">
+
+                    <Text
+
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="￥19"
+                        ohos:text_color="#dd5810"
+                        ohos:text_size="18fp"
+                        ohos:text_alignment="center"/>
+
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="match_parent"
+                        ohos:alignment="right"
+                        ohos:orientation="horizontal">
+
+                        <Image
+
+                            ohos:visibility="hide"
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:qian"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+
+                        <Text
+
+                            ohos:visibility="hide"
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:left_margin="2vp"
+                            ohos:right_margin="2vp"
+                            ohos:text="0"
+                            ohos:text_alignment="vertical_center"
+                            ohos:text_size="20fp"/>
+
+                        <Image
+
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:jia"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+                    </DirectionalLayout>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:below="$id:header_disc"
+            ohos:top_padding="15vp"
+            ohos:bottom_margin="60vp"
+            ohos:height="120vp"
+            ohos:width="match_parent"
+            ohos:background_element="#f6f6f8"
+
+            ohos:orientation="horizontal">
+            <Image
+
+                ohos:height="100vp"
+                ohos:width="100vp"
+                ohos:image_src="$media:jd"
+                ohos:scale_mode="stretch"
+                ohos:clip_alignment="center"
+                ohos:layout_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:left_margin="8vp"
+                ohos:top_margin="4vp"
+                ohos:height="100vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical">
+
+                <Text
+
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="经典拿铁"
+                    ohos:text_color="#313131"
+                    ohos:text_size="16fp"
+                    ohos:text_alignment="center"/>
+
+                <DirectionalLayout
+                    ohos:height="26vp"
+                    ohos:width="match_parent"
+                    ohos:top_margin="45vp"
+                    ohos:orientation="horizontal">
+
+                    <Text
+
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="￥36"
+                        ohos:text_color="#dd5810"
+                        ohos:text_size="18fp"
+                        ohos:text_alignment="center"/>
+
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="match_parent"
+                        ohos:alignment="right"
+                        ohos:orientation="horizontal">
+
+                        <Image
+
+                            ohos:visibility="hide"
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:qian"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+
+                        <Text
+
+                            ohos:visibility="hide"
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:left_margin="2vp"
+                            ohos:right_margin="2vp"
+                            ohos:text="0"
+                            ohos:text_alignment="vertical_center"
+                            ohos:text_size="20fp"/>
+
+                        <Image
+
+                            ohos:height="32vp"
+                            ohos:width="32vp"
+                            ohos:image_src="$media:jia"
+                            ohos:layout_alignment="vertical_center"
+                            ohos:padding="5vp"
+                            ohos:scale_mode="stretch"/>
+                    </DirectionalLayout>
+                </DirectionalLayout>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    </DirectionalLayout>
+
+
+</DirectionalLayout>
